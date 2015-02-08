@@ -1,10 +1,16 @@
 # awkwin's Codejam Library
-This is my library collection used in codejams.
+This is my library collection used in coding competitions.
+
+## License
+
+All codes except for mathapi is licensed under [StealItPl 1.1](https://github.com/whs/whs.github.com/blob/master/LICENSE).
+
+## API
 
 - `cjlib.baseN(num, base[, numerals])`: Convert `num` to base `base` with `numerals` as character representatives of values (default to 0-9a-z) [source](http://code.activestate.com/recipes/65212-convert-from-decimal-to-any-base-number/#c8)
 - `cjlib.mathapi`: @neizod's mathapi. [Source and docs](https://github.com/neizod/mathapi)
 
-# `input.py`
+### `input.py`
 Input library. This library only works with only one input at a time. (i.e. `input.get` should be called only once)
 
 - `input.get([default[, skip=True]])`: Read input from first command line argument or use `default`. Usually the first line is the lines count and will be automatically chopped. Disable this by setting `skip=False`.
@@ -24,7 +30,7 @@ Returns `["2 2 2", "2 1 2", "2 1 2", "2 2 2"]`.
 
 - `input.neof()`: Return `True` if there is still more input. Usually used in a `while` loop.
 
-# `runner.py`
+### `runner.py`
 
 Task multiprocessing.
 
